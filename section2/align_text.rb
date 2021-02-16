@@ -1,3 +1,5 @@
+# Try Ruby
+
 dial_book = {
   "newyork" => "212",
   "newbrunswick" => "732",
@@ -11,12 +13,6 @@ dial_book = {
   "lancaster" => "717"
 }
 
-# Get city names from input
-def get_city_names(input)
-  # code
-end
-
-# Get area code from input based on key
-def get_area_code(input, key)
-  # code
+dial_book.each do |k,v|
+  puts "Key: #{k.ljust(15)} Value: #{v}"
 end
