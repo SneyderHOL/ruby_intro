@@ -91,13 +91,15 @@ user_entry = gets.chomp
 
 if user_entry == "1"
   puts "You have chosen to multiply"
-  puts "The first number multiplied by the second number is #{multiply(num1, num2)}"
+  puts "The first number multiplied by the second number"\
+       " is #{multiply(num1, num2)}"
 elsif user_entry == "2"
   puts "You have chosen to add"
   puts "The first number added by the second number is #{added(num1, num2)}"
 elsif user_entry == "3"
   puts "You have chosen to substract"
-  puts "The first number substracted by the second number is #{substracted(num1, num2)}"
+  puts "The first number substracted by the second number"\
+       "is #{substracted(num1, num2)}"
 else
   puts "No valid input"
 end

@@ -6,6 +6,7 @@ users = [
   {username: "jonsnow", password: "password4"},
   {username: "heisenberg", password: "password5"}
 ]
+
 # authentication method
 def authenticate_user(username, password, list_of_users)
   list_of_users.each do |user|
@@ -15,13 +16,13 @@ def authenticate_user(username, password, list_of_users)
   end
   return "Credentials were not correct"
 end
+
 # program execution
 attempts = 1
 puts "Welcome to the authenticator"
 puts "-" * 25
 puts "This program will take input from the user and compare password"
 puts "If password is correct, you will get back the user object"
-
 while attempts < 4
   print "Username: "
   username = gets.chomp

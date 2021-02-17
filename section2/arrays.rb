@@ -1,11 +1,11 @@
+# Working with arrays
 my_array = [1,2,3,4,5,6,7,8,9]
 p my_array
 
 x = 1..100
 z = x.to_a
 y = z.shuffle
-p z
-p y
+p z, y
 
 letters = "a".."z"
 new_one = letters.to_a
@@ -40,8 +40,6 @@ aux = %w(this string is gonna be short)
 p aux
 
 # iterator
-
-aux.each {|element| print element + " "}
+aux.each { |element| print element + " " }
 puts
-p aux.select {|element| element.length > 3}
-
+p aux.select { |element| element.length > 3 }

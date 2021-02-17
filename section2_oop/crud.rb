@@ -1,6 +1,3 @@
-module Crud
-  require 'bcrypt'
-
 =begin
   if require 'crud' is used and calling those methods with Crud.
   adding methods to the module using
@@ -8,6 +5,8 @@ module Crud
   self.create_hash_digest
   if require 'crud' and include/exclude Crud is used calling methods without Crud.
 =end
+module Crud
+  require 'bcrypt'
 
   # create hash pasword object from password string
   # def self.create_hash_digest(password)
@@ -41,5 +40,4 @@ module Crud
     end
     "Credentials were not valid"
   end
-
 end

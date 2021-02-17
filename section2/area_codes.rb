@@ -25,16 +25,19 @@ end
 loop do
   print "Do you want to lookup an area code based on a city name?(Y/N) "
   answer = gets.chomp.downcase
-
   break if answer != "y"
+
   puts "Which city do you want the area code for"
   puts get_city_names(dial_book)
+
   puts "Enter your selection"
   selection = gets.chomp.downcase
+
   area_code = get_area_code(dial_book, selection)
   unless area_code
     puts "The city you enter is not on database"
     next
   end
+  
   puts "The area code for #{selection} is #{area_code}"
 end

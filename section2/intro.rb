@@ -1,11 +1,11 @@
+=begin
 # Say hello world in multiple ways
-
-# print "Hello World\n"
-# puts "Hello World"
-# p "Hello World"
-
-# greeting = "Hello World"
-# puts greeting
+print "Hello World\n"
+puts "Hello World"
+p "Hello World"
+greeting = "Hello World"
+puts greeting
+=end
 
 def say_hello(message)
   puts message

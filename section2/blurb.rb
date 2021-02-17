@@ -16,13 +16,10 @@ class Blurb
       return ":-)"
     # Add other moods here
     end
-
     # The default mood
     ":-|"
   end
 end
-
-puts Blurb.new(:moody).time
 
 class Blurbalizer
   def initialize(title)
@@ -38,7 +35,6 @@ class Blurbalizer
 
   def show_timeline
     puts "Blurbify: #{@title} has #{@blurbs.count} Blurbs"
-
     @blurbs.sort_by { |t|
       t.time
     }.reverse.each { |t|
@@ -47,6 +43,7 @@ class Blurbalizer
   end
 end
 
+puts Blurb.new(:moody).time
 myapp = Blurbalizer.new "The Big Blurb"
 myapp.add_a_blurb :moody, "Add Blurb here"
 myapp.add_a_blurb :happy, "I am never going back to that mountain."
