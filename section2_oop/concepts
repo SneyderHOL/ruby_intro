@@ -11,3 +11,32 @@ Inheritance - is used where a class inherits the behavior of another class, refe
 Polymorphism - is when a class inherits the behaviors of another class, but has the ability to not inherit everything and change some of it’s inherited behaviors. For example to write a method that does something differently from the inherited method
 
 Classes - It is a blueprint that describes the state and behavior that the objects of the class all share. A class can be used to create many objects. Objects created at runtime from a class are called instances of that particular class.
+
+MVC pattern
+
+mvc creates a separation between the presentation layer(what the user of the app sees in the browser or device) and the bussiness logic or backend (behind the scenes layer)
+
+Models
+app's resources it may require a storage or persistant layer, the use of models to communicate with database tables
+
+Views
+app's frontend, what the user sees (HTML, CSS, JS), erb embed ruby code
+
+Controllers
+app's backend, invisible to users (brain behind app)
+
+General flow of Rails application:
+
+-> Request made at browser
+
+-> Request received at router of rails application
+
+-> Request routed to appropriate action in a controller
+
+-> Controller#action either renders a view template or communicates with model
+
+-> Model communicates with database
+
+-> Model sends back information to controller
+
+-> Controller renders view
